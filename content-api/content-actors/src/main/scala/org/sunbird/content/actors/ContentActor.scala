@@ -31,6 +31,7 @@ import scala.collection.JavaConverters
 import scala.collection.JavaConverters._
 import scala.concurrent.{ExecutionContext, Future}
 
+
 class ContentActor @Inject() (implicit oec: OntologyEngineContext, ss: StorageService) extends BaseActor {
 
 	implicit val ec: ExecutionContext = getContext().dispatcher
